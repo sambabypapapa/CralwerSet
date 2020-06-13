@@ -95,25 +95,6 @@ def login():
     print('登录成功')
 
 
-def connect1_sql():
-    """
-    连接数据库
-    :return:
-    """
-
-    conn2 = pymysql.connect(host='39.99.129.119', port=3306,
-                            user='root', passwd='fanking123',
-                            db='test', charset='utf8')
-    return conn2
-
-
-def connect2_sql():
-    conn2 = pymysql.connect(host='39.99.129.119', port=3306,
-                            user='root', passwd='fanking123',
-                            db='wshark_erp', charset='utf8')
-    return conn2
-
-
 def get_response(page):
     """
     获取文章列表返回信息
